@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Satoshi";
-  src: url("../fonts/Satoshi-Variable.woff2") format("woff2");
+  src: url("fonts/Satoshi-Variable.woff2") format("woff2");
   font-weight: 300 900;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "nympha";
-  src: url("/fonts/nymphatrial-light-webfont.woff2") format("woff2");
+  src: url("fonts/nymphatrial-light-webfont.woff2") format("woff2");
   font-weight: lighter;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "nympha";
-  src: url("/fonts/nymphatrial-regular-webfont.woff2") format("woff2");
+  src: url("fonts/nymphatrial-regular-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
