@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Variable.woff2') format('woff2');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nympha';
+    src: url('/fonts/nymphatrial-light-webfont.woff2') format('woff2');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'nympha';
+    src: url('/fonts/nymphatrial-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import './scss/utilities';
+
+:root {
+    --color1: #B8C5D5;
+    --color2: #ff6347;
+    --color3: #B6FFFF;
+    --color4: #B6FFFF;
+    --color5: #493D34;
+    --color6: #0A0A0A;
+
+    --grey: #B8C5D5;
+    --dark-grey: #60676F;
+}
+
+body {
+    background: 
+        url('/img/star-bg.svg') no-repeat 10% 20% / 50px 50px,
+        url('/img/star-bg.svg') no-repeat 70% 80% / 100px 100px,
+        url('/img/star-bg.svg') no-repeat 50% 50% / 75px 75px,
+        radial-gradient(circle at 20% 30%, var(--color1), transparent 50%),
+        radial-gradient(circle at 50% 50%, var(--color2), transparent 50%),
+        radial-gradient(circle at 70% 70%, var(--color3), transparent 50%),
+        rgba(220, 222, 209, 0.2);
+        /* url('/img/star-bg.svg') no-repeat 10% 20% / 20%,
+        url('/img/star-bg.svg') no-repeat 40% 40% / 40%,
+        url('/img/star-bg.svg') no-repeat 50% 60% / 20%, */
+        
+
+    background-blend-mode: screen;
+    height: 100vh;
+    margin: 0;
+    font-family: "Satoshi", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    color: var(--color6);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.display-text-1 {
+    font-family: "nympha";
+    font-size: 4em;
+    display: block;
+}
+
+.deco-circle {
+    &-top-left {
+        top: 10px;
+        left: -6.5px;
+    
+        &::before {
+            top: 17px;
+            left: -6px;
+        }
+
+        &::after {
+            top: 45px;
+            left: -13.5px;
+        }
+    }
+
+    &-bottom-left {
+        bottom: 10px;
+        left: -6.5px;
+    
+        &::before {
+            bottom: 17px;
+            left: -6px;
+        }
+
+        &::after {
+            bottom: 45px;
+            left: -13.5px;
+        }
+    }
+    
+    &-top-right {
+        top: 10px;
+        right: -6.5px;
+    
+        &::before {
+            top: 17px;
+            right: -6px;
+        }
+
+        &::after {
+            top: 45px;
+            right: -13.5px;
+        }
+    }
+
+    &-bottom-right {
+        bottom: 10px;
+        right: -6.5px;
+    
+        &::before {
+            bottom: 17px;
+            right: -6px;
+        }
+
+        &::after {
+            bottom: 45px;
+            right: -13.5px;
+        }
+    }
+
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--color6);
+    border-radius: 50px;
+    // transform: translateX(-50%);
+
+    &::before {
+        content: '';
+        position: absolute;
+       
+        width: 22px;
+        height: 22px;
+        border: 1px solid var(--color6);
+        border-radius: 50px;
+        // transform: translateX(-50%);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        border: 1px solid var(--color6);
+        border-radius: 50px;  
+        // transform: translateX(-50%);
+    }
+}
+
+.scroll-down-circle {
+    width: 175px;
+    height: 175px;
+    background: url('./img/curve_text.svg') no-repeat;
+    position: absolute;
+    right: 40px;
+    bottom: 100px;
+}
+
+
+nav {
+     #logo {
+        font-size: 30px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+    }
+    
+    #menus {
+        ul {
+            list-style-type: none;
+            float: right;
+            display: flex;
+            font-size: 22px;
+            font-weight: bold;
+            gap: 2.6em;
+
+            li {
+                float: left;
+
+            }
+        }
+    }
+}
+
+main {
+    padding: 40px;
+
+    #hero-wrapper {
+        border-left: 2px solid var(--color6);
+        border-right: 2px solid var(--color6);
+        position: relative;
+
+        #welcome {
+            letter-spacing: 0.4em;
+            color: var(--color5);
+            padding: 100px 0px;
+    
+            &::after {
+                content: url('/img/start_circle.svg');
+                display: block;
+                position: absolute;
+                top: -65px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    
+        #intro {
+            text-align: center;
+            padding: 0px 200px;
+    
+    
+            #about-me-btn {
+                border: none;
+                background-color: var(--color6);
+                color: #fff;
+                font-size: 0.75em;
+                padding: 22px 60px;
+                border-radius: 50px;
+            }
+        }
+    }
+}
+
+
+
+

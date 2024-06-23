@@ -1,0 +1,36 @@
+// Define spacing scale
+$spacings: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 1.5rem,
+  5: 3rem,
+  auto: auto
+);
+
+// Mixin to generate padding utilities
+@mixin padding-utilities($prop) {
+  @each $key, $value in $spacings {
+    .p#{$key} { padding: $value; }
+    .#{$prop}t-#{$key} { padding-top: $value; }
+    .#{$prop}r-#{$key} { padding-right: $value; }
+    .#{$prop}b-#{$key} { padding-bottom: $value; }
+    .#{$prop}l-#{$key} { padding-left: $value; }
+  }
+}
+
+// Mixin to generate margin utilities
+@mixin margin-utilities($prop) {
+  @each $key, $value in $spacings {
+    .m#{$key} { margin: $value; }
+    .#{$prop}t-#{$key} { margin-top: $value; }
+    .#{$prop}r-#{$key} { margin-right: $value; }
+    .#{$prop}b-#{$key} { margin-bottom: $value; }
+    .#{$prop}l-#{$key} { margin-left: $value; }
+  }
+}
+
+// Generate padding and margin utilities
+@include padding-utilities('p');
+@include margin-utilities('m');

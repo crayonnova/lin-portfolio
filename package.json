@@ -1,0 +1,19 @@
+{
+  "name": "lin-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass style.scss style.css",
+    "scss:watch": "sass --watch style.scss:style.css",
+    "start": "lite-server",
+    "dev": "concurrently \"npm run scss:watch\" \"npm start\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "lite-server": "^2.6.1",
+    "sass": "^1.77.6"
+  }
+}
