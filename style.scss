@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Satoshi';
-    src: url('../fonts/Satoshi-Variable.woff2') format('woff2');
+    src: url('fonts/Satoshi-Variable.woff2') format('woff2');
     font-weight: 300 900;
     font-display: swap;
     font-style: normal;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'nympha';
-    src: url('/fonts/nymphatrial-light-webfont.woff2') format('woff2');
+    src: url('fonts/nymphatrial-light-webfont.woff2') format('woff2');
     font-weight: lighter;
     font-style: normal;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'nympha';
-    src: url('/fonts/nymphatrial-regular-webfont.woff2') format('woff2');
+    src: url('fonts/nymphatrial-regular-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -38,16 +38,16 @@
 
 body {
     background: 
-        url('/img/star-bg.svg') no-repeat 10% 20% / 50px 50px,
-        url('/img/star-bg.svg') no-repeat 70% 80% / 100px 100px,
-        url('/img/star-bg.svg') no-repeat 50% 50% / 75px 75px,
+        url('img/star-bg.svg') no-repeat 10% 20% / 50px 50px,
+        url('img/star-bg.svg') no-repeat 70% 80% / 100px 100px,
+        url('img/star-bg.svg') no-repeat 50% 50% / 75px 75px,
         radial-gradient(circle at 20% 30%, var(--color1), transparent 50%),
         radial-gradient(circle at 50% 50%, var(--color2), transparent 50%),
         radial-gradient(circle at 70% 70%, var(--color3), transparent 50%),
         rgba(220, 222, 209, 0.2);
-        /* url('/img/star-bg.svg') no-repeat 10% 20% / 20%,
-        url('/img/star-bg.svg') no-repeat 40% 40% / 40%,
-        url('/img/star-bg.svg') no-repeat 50% 60% / 20%, */
+        /* url('img/star-bg.svg') no-repeat 10% 20% / 20%,
+        url('img/star-bg.svg') no-repeat 40% 40% / 40%,
+        url('img/star-bg.svg') no-repeat 50% 60% / 20%, */
         
 
     background-blend-mode: screen;
@@ -180,7 +180,7 @@ a {
 .scroll-down-circle {
     width: 175px;
     height: 175px;
-    background: url('./img/curve_text.svg') no-repeat;
+    background: url('img/curve_text.svg') no-repeat;
     position: absolute;
     right: 40px;
     bottom: 100px;
@@ -226,7 +226,7 @@ main {
             padding: 100px 0px;
     
             &::after {
-                content: url('/img/start_circle.svg');
+                content: url('img/start_circle.svg');
                 display: block;
                 position: absolute;
                 top: -65px;
